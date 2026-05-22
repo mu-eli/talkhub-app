@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      name="description"
+      content="Get in touch with TalkHub for questions, business inquiries, or to start your language learning journey. Contact us today to find your perfect tutor!"
+    />
+
+    <link rel="icon" href="favicon/favicon.png" />
+    <link rel="apple-touch-icon" href="favicon/favicon-apple.png" />
+    <link rel="manifest" href="manifest.webmanifest" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend+Zetta:wght@100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Sansita+Swashed:wght@300..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+
+    <script defer src="script.js"></script>
+
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="queries.css" />
+
+    <title>Contact</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-container">
+        <div class="header-logo">
+          <a href="index.html"
+            ><img
+              src="img/header-logo.png"
+              alt="A white colored logo of talkhub"
+              class="logo"
+          /></a>
+          <div class="right-border"></div>
+        </div>
+
+        <nav class="main-nav">
+          <ul class="main-nav--list">
+            <li><a href="index.html" class="main-nav--link">Homepage</a></li>
+            <li><a href="about.html" class="main-nav--link">About us</a></li>
+            <li><a href="tutors.html" class="main-nav--link">Tutors</a></li>
+            <li><a href="packages.html" class="main-nav--link">Packages</a></li>
+            <li><a href="contact.html" class="main-nav--link">Contact</a></li>
+          </ul>
+
+          <div class="btn-container">
+            <div class="right-border"></div>
+
+            <div class="header-btn">
+              <a href="tutors.html" class="tutor-btn">Find a Tutor</a>
+              <a href="packages.html" class="book-btn">Book a Class</a>
+            </div>
+          </div>
+        </nav>
+
+        <button class="btn-mobile--nav">
+          <ion-icon name="menu-outline" class="icon-mobile--nav"></ion-icon>
+          <ion-icon name="close-outline" class="icon-mobile--nav"></ion-icon>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="contact-section container">
+        <div class="contact-container dotted-border">
+          <div class="contact-text--box">
+            <p class="hello-text">Hello</p>
+            <p class="enquiry-text">Have a question or business inquiry?</p>
+            <p class="contact-text">
+              You can get in touch with us using the links below.
+            </p>
+            <a href="#" class="email-btn"
+              ><p>Email Us</p>
+              <p>
+                <ion-icon
+                  name="arrow-forward-outline"
+                  class="arrow"
+                ></ion-icon></p
+            ></a>
+          </div>
+
+          <form id="form" class="form" method="POST" action="contact.php">
+            <div class="form-input">
+              <div>
+                <label class="label-name">Full Name</label>
+                <input
+                  class="input-name"
+                  type="text"
+                  name="fullname"
+                  placeholder="Jane Doe"
+                  required
+                />
+              </div>
+
+              <div>
+                <label class="label-name">Your Email</label>
+                <input
+                  class="input-name"
+                  type="email"
+                  name="email"
+                  placeholder="janedoe@example.com"
+                  required
+                />
+              </div>
+            </div>
+
+            <label class="label-name">Your Message</label>
+            <textarea
+              class="message-area"
+              name="Message"
+              placeholder="Hello, I need help for.."
+            ></textarea>
+
+            <input type="text" name="website" style="display: none" />
+
+            <div
+              class="g-recaptcha"
+              data-sitekey="6Lcv3OwrAAAAAMnLDF7EhVhE2m8__6JWVkW2PfIP"
+            ></div>
+
+            <button type="submit" class="submit-btn">Send Message</button>
+          </form>
+
+          <div id="form-message"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer-section">
+      <div class="footer-container">
+        <div class="footer-logo--container">
+          <div class="footer-logo">
+            <a href="index.html"
+              ><img
+                src="img/header-logo.png"
+                alt="A white colored logo of talkhub"
+                class="footer-logo--img"
+            /></a>
+          </div>
+        </div>
+
+        <div class="footer-nav--container">
+          <div class="footer-socials">
+            <div class="footer-social--icon">
+              <a
+                class="footer-icons"
+                href="https://www.instagram.com/talkhubenglish/"
+                target="_blank"
+                ><ion-icon name="logo-instagram"></ion-icon
+              ></a>
+            </div>
+
+            <div class="footer-social--icon">
+              <a
+                class="footer-icons"
+                href="https://www.tiktok.com/@talkhubenglish"
+                target="_blank"
+                ><ion-icon name="logo-tiktok"></ion-icon
+              ></a>
+            </div>
+          </div>
+
+          <div class="footer-contact">
+            <a
+              href="mailto:eliudmuwowo@gmail.com"
+              aria-label="Email Eliud Muwowo"
+              class="email-text"
+              >eliudmuwowo@gmail.com</a
+            >
+          </div>
+
+          <div class="copyright">
+            <p class="copyright-text">
+              &copy;<span class="year">2025</span> — Copyright
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+
+  <script>
+    function onSubmit(token) {
+      document.getElementById("demo-form").submit();
+    }
+  </script>
+</html>

@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      name="description"
+      content="talkhub is an online English learning platform where everyone has the opportunity to express themselves. Lessons tailored to your personal needs"
+    />
+
+    <link rel="icon" href="favicon/favicon.png" />
+    <link rel="apple-touch-icon" href="favicon/favicon-apple.png" />
+    <link rel="manifest" href="manifest.webmanifest" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend+Zetta:wght@100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Sansita+Swashed:wght@300..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <script src="https://code.iconify.design/iconify-icon/3.0.0/iconify-icon.min.js"></script>
+
+    <script defer src="script.js"></script>
+
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="queries.css" />
+    <title>Homepage</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-container">
+        <div class="header-logo">
+          <a href="index.html"
+            ><img
+              src="img/header-logo.png"
+              alt="A white colored logo of talkhub"
+              class="logo"
+          /></a>
+          <div class="right-border"></div>
+        </div>
+
+        <nav class="main-nav" aria-label="Main Navigation">
+          <ul class="main-nav--list">
+            <li>
+              <a href="index.html" data-page="Homepage" class="main-nav--link"
+                >Homepage</a
+              >
+            </li>
+            <li>
+              <a href="about.html" data-page="About Us" class="main-nav--link"
+                >About us</a
+              >
+            </li>
+            <li>
+              <a href="tutors.html" data-page="Tutors" class="main-nav--link"
+                >Tutors</a
+              >
+            </li>
+            <li>
+              <a
+                href="packages.html"
+                data-page="Packages"
+                class="main-nav--link"
+                >Packages</a
+              >
+            </li>
+            <li>
+              <a href="contact.html" data-page="Contact" class="main-nav--link"
+                >Contact</a
+              >
+            </li>
+          </ul>
+
+          <div class="btn-container">
+            <div class="right-border"></div>
+            <div class="header-btn">
+              <a href="tutors.html" class="tutor-btn">Find a Tutor</a>
+              <a href="packages.html" class="book-btn">Book a Class</a>
+            </div>
+          </div>
+        </nav>
+
+        <button class="btn-mobile--nav">
+          <ion-icon name="menu-outline" class="icon-mobile--nav"></ion-icon>
+          <ion-icon name="close-outline" class="icon-mobile--nav"></ion-icon>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero-section">
+        <div class="hero-container dotted-border">
+          <div class="hero-section--text">
+            <h2 class="hero-heading">Talkhub helps</h2>
+            <p class="hero-primary--text">
+              Turkish learners turn English grammar into confident
+              conversations.
+            </p>
+            <p class="hero-subtext">
+              Connect with native speakers for real conversation practice,
+              overcoming anxiety and building fluency.
+            </p>
+            <a
+              href="https://www.instagram.com/talkhubenglish/"
+              target="_blank"
+              class="social-btn"
+              ><p>instagram</p>
+              <p>
+                <ion-icon
+                  name="arrow-forward-outline"
+                  class="arrow"
+                ></ion-icon></p
+            ></a>
+          </div>
+
+          <div class="hero-img--container">
+            <img
+              src="img/hero-img.png"
+              alt="An image of an african american with text next to the image and an icon"
+              class="hero-img"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="course-section">
+        <div class="course-container">
+          <p class="course-name">beginner</p>
+          <p class="course-name">intermediate</p>
+          <p class="course-name">advanced</p>
+          <p class="course-name">IELTS/TOEFL</p>
+          <p class="course-name">university prep year</p>
+          <p class="course-name">speaking club</p>
+          <p class="course-name">business talk</p>
+        </div>
+      </section>
+
+      <section class="explore-cards--section">
+        <div class="icon-grid--container">
+          <div>
+            <p class="explore-primary--text">
+              Unlike traditional grammar-focused schools, we offer a practical,
+              immersive experience to help you speak English confidently.
+            </p>
+            <p class="explore-subtext">
+              Getting started with talkhub is simple and easy!
+            </p>
+          </div>
+
+          <div class="smiley-container">
+            <img
+              src="img/explore-img.svg"
+              alt="A white smiley icon image"
+              class="smile-icon--img"
+            />
+          </div>
+        </div>
+
+        <div class="explore-card--grid">
+          <div class="explore-card--1">
+            <div class="card-wrap">
+              <div class="levels">
+                <p class="tag green-tag">beginner</p>
+                <p class="tag purple-tag">intermediate</p>
+                <p class="tag blue-tag">advanced</p>
+              </div>
+              <p class="card-tertiary--text">Find your English level:</p>
+              <h2 class="card-heading">
+                Start with a quick language assessment.
+              </h2>
+              <p class="card-subtext">
+                This helps us tailor the learning experience to your needs.
+              </p>
+            </div>
+
+            <a href="" class="explore-btn"
+              ><p>See Language Assessment</p>
+              <span
+                ><ion-icon
+                  name="arrow-forward-outline"
+                  class="arrow"
+                ></ion-icon></span
+            ></a>
+          </div>
+
+          <div class="explore-card--2">
+            <div class="card-wrap">
+              <div class="levels">
+                <p class="tag">Basic</p>
+                <p class="tag">Premium</p>
+                <p class="tag">Professional</p>
+              </div>
+              <p class="card-tertiary--text">Choose a Package:</p>
+              <h2 class="card-heading">
+                Select a package that suits your learning goals.
+              </h2>
+              <p class="card-subtext--1">We have options for everyone.</p>
+            </div>
+
+            <div class="card-btn--container">
+              <a href="packages.html" class="price-btn"
+                ><p>See Pricing Plans</p>
+                <span
+                  ><ion-icon
+                    name="arrow-forward-outline"
+                    class="arrow"
+                  ></ion-icon></span
+              ></a>
+            </div>
+          </div>
+          <img
+            src="img/discount-badge.png"
+            alt="white colored discount text with orange background badge"
+            class="badge-img"
+          />
+        </div>
+      </section>
+
+      <section class="testimonial-section container">
+        <h2 class="testimonial-heading">Hear From Our Learners</h2>
+        <div class="testimonial-container">
+          <div class="testimonial-cards">
+            <blockquote class="testimonial-text">
+              The teacher encourages me to speak, which I really appreciate. And
+              I feel comfortable while speaking.
+            </blockquote>
+            <div class="student-details">
+              <img
+                src="img/student-2.jpg"
+                alt="A woman wearing glasses looking at a laptop"
+                class="testimonial-img"
+              />
+              <div>
+                <p class="student-name">Sena Y.</p>
+                <p class="student-level">Beginner</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-cards">
+            <blockquote class="testimonial-text">
+              Eliud alleviate my concerns about speaking English. He encouraged
+              me to speak comfortably. He left a good impression for taking
+              again his lesson.
+            </blockquote>
+            <div class="student-details">
+              <img
+                src="img/student-3.jpg"
+                alt="A woman with headphones in front of a laptop"
+                class="testimonial-img"
+              />
+              <div>
+                <p class="student-name">Seda B.</p>
+                <p class="student-level">Intermediate</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-cards">
+            <blockquote class="testimonial-text">
+              He is kind and helpful to all students. Besides being my teacher,
+              he became one of my friends. He taught me some tips that I had
+              never heard before.
+            </blockquote>
+            <div class="student-details">
+              <img
+                src="img/student-1.jpg"
+                alt="A man in black button up shirt"
+                class="testimonial-img"
+              />
+              <div>
+                <p class="student-name">Onur L.</p>
+                <p class="student-level">Advanced</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-cards">
+            <blockquote class="testimonial-text">
+              Owen's time, effort, and interest greatly improved my English
+              thinking, making lessons enjoyable and goal-orientated, enhancing
+              my English significantly.
+            </blockquote>
+            <div class="student-details">
+              <img
+                src="img/student-4.jpg"
+                alt="A woman sitting in front of a laptop"
+                class="testimonial-img"
+              />
+              <div>
+                <p class="student-name">Polen K.</p>
+                <p class="student-level">Advanced</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="why-us--section container">
+        <div class="why-us--container dotted-border">
+          <div class="icon-container">
+            <div class="why-us--text">
+              <h2 class="why-us--heading">Why Us?</h2>
+              <p class="why-us--subtext">
+                Learn a new language online — anywhere, anytime!
+              </p>
+            </div>
+
+            <div class="why-us--icon">
+              <img
+                src="img/explore-img.svg"
+                alt="A white smiley icon image"
+                class="why-us--img"
+              />
+            </div>
+          </div>
+
+          <div class="why-us">
+            <div class="">
+              <span
+                ><iconify-icon
+                  icon="fluent:target-arrow-20-regular"
+                  width="64"
+                  height="64"
+                ></iconify-icon
+              ></span>
+              <p class="why-card--text">Personalized Lessons For Every Goal</p>
+            </div>
+
+            <div class="">
+              <span
+                ><iconify-icon
+                  icon="mdi:speak"
+                  width="64"
+                  height="64"
+                ></iconify-icon
+              ></span>
+
+              <p class="why-card--text">Native & Certified Instructors</p>
+            </div>
+
+            <div class="">
+              <span
+                ><iconify-icon
+                  icon="codicon:calendar"
+                  width="64"
+                  height="64"
+                ></iconify-icon
+              ></span>
+
+              <p class="why-card--text">Flexible Scheduling to Fit Your Life</p>
+            </div>
+
+            <div class="">
+              <span
+                ><iconify-icon
+                  icon="vaadin:comment-ellipsis-o"
+                  width="64"
+                  height="64"
+                ></iconify-icon
+              ></span>
+              <p class="why-card--text">
+                Real-time conversation practice, not just theory
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer-section">
+      <div class="footer-container">
+        <div class="footer-logo--container">
+          <div class="footer-logo">
+            <a href="index.html"
+              ><img
+                src="img/header-logo.png"
+                alt="A white colored logo of talkhub"
+                class="footer-logo--img"
+            /></a>
+          </div>
+        </div>
+
+        <div class="footer-nav--container">
+          <div class="footer-socials">
+            <div class="footer-social--icon">
+              <a
+                class="footer-icons"
+                href="https://www.instagram.com/talkhubenglish/"
+                target="_blank"
+                ><ion-icon name="logo-instagram"></ion-icon
+              ></a>
+            </div>
+
+            <div class="footer-social--icon">
+              <a
+                class="footer-icons"
+                href="https://www.tiktok.com/@talkhubenglish"
+                target="_blank"
+                ><ion-icon name="logo-tiktok"></ion-icon
+              ></a>
+            </div>
+          </div>
+
+          <div class="footer-contact">
+            <a
+              href="mailto:eliudmuwowo@gmail.com"
+              aria-label="Email Eliud Muwowo"
+              class="email-text"
+              >eliudmuwowo@gmail.com</a
+            >
+          </div>
+
+          <div class="copyright">
+            <p class="copyright-text">
+              &copy;<span class="year">2025</span> — Copyright
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
