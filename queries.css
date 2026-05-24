@@ -250,12 +250,12 @@
   }
 
   .course-section::before {
-    left: 0;
+    left: -4%;
     background: linear-gradient(to right, var(--primary-color), transparent);
   }
 
   .course-section::after {
-    right: 0;
+    right: -4%;
     background: linear-gradient(to left, var(--primary-color), transparent);
   }
 
@@ -279,10 +279,6 @@
     padding: 0 3.2rem;
     transition: color 0.2s ease;
     position: relative;
-  }
-
-  .course-name:hover {
-    color: var(--color-white);
   }
 
   .course-name::after {
