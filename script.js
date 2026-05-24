@@ -1,18 +1,23 @@
+// UPDATE YEAR
+////////////////
 const yearEl = document.querySelector(".year");
-const currentYear = new Date().getFullYear();
-yearEl.textContent = currentYear;
+if (yearEl) yearEl.textContent = new Date().getFullYear();
 
+// MOBILE NAVIGATION
+//////////////////////////
 const btnNavEl = document.querySelector(".btn-mobile--nav");
 const headerEl = document.querySelector(".header");
-btnNavEl.addEventListener("click", function () {
-  headerEl.classList.toggle("nav-open");
-});
+if (btnNavEl && headerEl) {
+  btnNavEl.addEventListener("click", () =>
+    headerEl.classList.toggle("nav-open"),
+  );
+}
 
+// LINK ACTIVATION
+////////////////////
 document.addEventListener("DOMContentLoaded", () => {
   const currentPage = location.pathname.split("/").pop();
-  const navLinks = document.querySelectorAll(".main-nav--link");
-
-  navLinks.forEach((link) => {
+  document.querySelectorAll(".main-nav--link").forEach((link) => {
     const href = link.getAttribute("href");
     if (href === currentPage || (currentPage === "" && href === "index.html")) {
       link.classList.add("active");
@@ -20,66 +25,67 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
+// CONTACT FORM
+/////////////////
 const form = document.getElementById("form");
 
-const messageDiv = document.createElement("div");
-messageDiv.id = "form-message";
-messageDiv.style.marginTop = "1rem";
-form.appendChild(messageDiv);
-
-form.addEventListener("submit", async function (e) {
-  e.preventDefault();
-
+if (form) {
   const submitBtn = form.querySelector("button[type='submit']");
-  submitBtn.disabled = true;
-  submitBtn.textContent = "Sending...";
+  const SUBMIT_LABEL = submitBtn?.textContent ?? "Send Message";
 
-  const formData = new FormData(form);
+  const messageDiv = Object.assign(document.createElement("div"), {
+    id: "form-message",
+  });
+  messageDiv.style.marginTop = "16px";
+  form.appendChild(messageDiv);
 
-  if (formData.get("website")) {
-    submitBtn.disabled = false;
-    submitBtn.textContent = "Send Message";
-    return;
-  }
+  const setMessage = (text, color) => {
+    messageDiv.textContent = text;
+    messageDiv.style.color = color;
+  };
 
-  const recaptchaResponse =
-    typeof grecaptcha !== "undefined" ? grecaptcha.getResponse() : "";
-  if (typeof grecaptcha !== "undefined" && !recaptchaResponse) {
-    messageDiv.style.color = "red";
-    messageDiv.textContent = "Please verify you are not a robot.";
-    submitBtn.disabled = false;
-    submitBtn.textContent = "Send Message";
-    return;
-  }
+  const setSubmitState = (loading) => {
+    if (!submitBtn) return;
+    submitBtn.disabled = loading;
+    submitBtn.textContent = loading ? "Sending..." : SUBMIT_LABEL;
+  };
 
-  messageDiv.style.color = "#333";
-  messageDiv.textContent = "Sending message...";
+  form.addEventListener("submit", async (e) => {
+    e.preventDefault();
+    setSubmitState(true);
 
-  try {
-    const response = await fetch(form.action, {
-      method: "POST",
-      body: formData,
-    });
+    const formData = new FormData(form);
 
-    const result = await response.text();
-
-    if (result.trim() === "success") {
-      messageDiv.style.color = "white";
-      messageDiv.textContent = "Your message has been sent successfully!";
-      form.reset();
-
-      if (typeof grecaptcha !== "undefined") grecaptcha.reset();
-    } else {
-      messageDiv.style.color = "red";
-      messageDiv.textContent =
-        "An error occurred. Please check your information and try again.";
+    if (formData.get("website")) {
+      setSubmitState(false);
+      return;
     }
-  } catch (error) {
-    messageDiv.style.color = "red";
-    messageDiv.textContent =
-      "A network error occurred. Please check your connection.";
-  } finally {
-    submitBtn.disabled = false;
-    submitBtn.textContent = "Send Message";
-  }
-});
+
+    setMessage("Sending message…", "#adb5bd");
+
+    try {
+      const response = await fetch(form.action, {
+        method: "POST",
+        body: formData,
+      });
+      const result = await response.text();
+
+      if (result.trim() === "success") {
+        setMessage("Your message has been sent successfully!", "#fff");
+        form.reset();
+      } else {
+        setMessage(
+          "An error occurred. Please check your information and try again.",
+          "red",
+        );
+      }
+    } catch {
+      setMessage(
+        "A network error occurred. Please check your connection.",
+        "#ff8787",
+      );
+    } finally {
+      setSubmitState(false);
+    }
+  });
+}

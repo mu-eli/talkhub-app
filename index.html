@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -100,7 +100,7 @@
     </header>
 
     <main>
-      <section class="hero-section">
+      <section class="hero-section container">
         <div class="hero-container dotted-border">
           <div class="hero-section--text">
             <h2 class="hero-heading">Talkhub helps</h2>
@@ -116,12 +116,12 @@
               href="https://www.instagram.com/talkhubenglish/"
               target="_blank"
               class="social-btn"
-              ><p>instagram</p>
-              <p>
+              >instagram
+              <span>
                 <ion-icon
                   name="arrow-forward-outline"
                   class="arrow"
-                ></ion-icon></p
+                ></ion-icon></span
             ></a>
           </div>
 
@@ -135,15 +135,27 @@
         </div>
       </section>
 
-      <section class="course-section">
+      <section class="course-section container">
         <div class="course-container">
-          <p class="course-name">beginner</p>
-          <p class="course-name">intermediate</p>
-          <p class="course-name">advanced</p>
-          <p class="course-name">IELTS/TOEFL</p>
-          <p class="course-name">university prep year</p>
-          <p class="course-name">speaking club</p>
-          <p class="course-name">business talk</p>
+          <div class="course-group">
+            <p class="course-name">beginner</p>
+            <p class="course-name">intermediate</p>
+            <p class="course-name">advanced</p>
+            <p class="course-name">IELTS/TOEFL</p>
+            <p class="course-name">university prep year</p>
+            <p class="course-name">speaking club</p>
+            <p class="course-name">business talk</p>
+          </div>
+
+          <div class="course-group-2">
+            <p class="course-name">beginner</p>
+            <p class="course-name">intermediate</p>
+            <p class="course-name">advanced</p>
+            <p class="course-name">IELTS/TOEFL</p>
+            <p class="course-name">university prep year</p>
+            <p class="course-name">speaking club</p>
+            <p class="course-name">business talk</p>
+          </div>
         </div>
       </section>
 
@@ -186,7 +198,7 @@
             </div>
 
             <a href="" class="explore-btn"
-              ><p>See Language Assessment</p>
+              >See Language Assessment
               <span
                 ><ion-icon
                   name="arrow-forward-outline"
@@ -211,7 +223,7 @@
 
             <div class="card-btn--container">
               <a href="packages.html" class="price-btn"
-                ><p>See Pricing Plans</p>
+                >See Pricing Plans
                 <span
                   ><ion-icon
                     name="arrow-forward-outline"
@@ -219,12 +231,12 @@
                   ></ion-icon></span
               ></a>
             </div>
+            <img
+              src="img/discount-badge.png"
+              alt="white colored discount text with orange background badge"
+              class="badge-img"
+            />
           </div>
-          <img
-            src="img/discount-badge.png"
-            alt="white colored discount text with orange background badge"
-            class="badge-img"
-          />
         </div>
       </section>
 
@@ -242,7 +254,7 @@
                 alt="A woman wearing glasses looking at a laptop"
                 class="testimonial-img"
               />
-              <div>
+              <div class="student-profile">
                 <p class="student-name">Sena Y.</p>
                 <p class="student-level">Beginner</p>
               </div>
@@ -261,7 +273,7 @@
                 alt="A woman with headphones in front of a laptop"
                 class="testimonial-img"
               />
-              <div>
+              <div class="student-profile">
                 <p class="student-name">Seda B.</p>
                 <p class="student-level">Intermediate</p>
               </div>
@@ -280,7 +292,7 @@
                 alt="A man in black button up shirt"
                 class="testimonial-img"
               />
-              <div>
+              <div class="student-profile">
                 <p class="student-name">Onur L.</p>
                 <p class="student-level">Advanced</p>
               </div>
@@ -299,7 +311,7 @@
                 alt="A woman sitting in front of a laptop"
                 class="testimonial-img"
               />
-              <div>
+              <div class="student-profile">
                 <p class="student-name">Polen K.</p>
                 <p class="student-level">Advanced</p>
               </div>
@@ -332,8 +344,7 @@
               <span
                 ><iconify-icon
                   icon="fluent:target-arrow-20-regular"
-                  width="64"
-                  height="64"
+                  class="icons"
                 ></iconify-icon
               ></span>
               <p class="why-card--text">Personalized Lessons For Every Goal</p>
@@ -341,11 +352,7 @@
 
             <div class="">
               <span
-                ><iconify-icon
-                  icon="mdi:speak"
-                  width="64"
-                  height="64"
-                ></iconify-icon
+                ><iconify-icon icon="mdi:speak" class="icons"></iconify-icon
               ></span>
 
               <p class="why-card--text">Native & Certified Instructors</p>
@@ -355,8 +362,7 @@
               <span
                 ><iconify-icon
                   icon="codicon:calendar"
-                  width="64"
-                  height="64"
+                  class="icons"
                 ></iconify-icon
               ></span>
 
@@ -367,8 +373,7 @@
               <span
                 ><iconify-icon
                   icon="vaadin:comment-ellipsis-o"
-                  width="64"
-                  height="64"
+                  class="icons"
                 ></iconify-icon
               ></span>
               <p class="why-card--text">
@@ -380,7 +385,7 @@
       </section>
     </main>
 
-    <footer class="footer-section">
+    <footer class="footer-section container">
       <div class="footer-container">
         <div class="footer-logo--container">
           <div class="footer-logo">

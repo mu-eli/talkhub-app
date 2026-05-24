@@ -1,237 +1,8 @@
 /* BIG DESKTOP = 1440px+ */
 @media screen and (min-width: 90em) {
-}
-
-/* DESKTOP = 1424px */
-@media (max-width: 89em) {
-  .header {
-    margin: 2.4rem auto 4.8rem;
-    padding: 0 3.2rem;
-  }
-
-  .email-text {
-    font-size: 1.6rem;
-  }
-
-  .logo {
-    width: 5.6rem;
-    height: 4.8rem;
-  }
-
-  .header-btn {
-    gap: 2.4rem;
-    border: none;
-  }
-
-  .tutor-btn,
-  .book-btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 10.3rem;
-    height: 3rem;
-    padding: 0.8rem 1.6rem;
-    font-size: 1.2rem;
-  }
-
-  .hero-section,
-  .course-section,
-  .testimonial-section,
-  .why-us--section,
-  .footer-section,
-  .about-section,
-  .m-v--section,
-  .why-section,
-  .cards-section,
-  .tutor-section,
-  .pricing-cards--section,
-  .contact-section {
-    padding: 0 3.2rem;
-  }
-
-  .hero-container {
-    grid-template-columns: 1fr 1fr;
-    gap: 4.4rem;
-    padding: 6.4rem;
-  }
-
-  .course-section {
-    margin: 4.8rem auto 8rem;
-  }
-
-  .course-container {
-    overflow-x: scroll;
-    text-wrap: nowrap;
-    padding: 2.4rem;
-  }
-
-  .icon-grid--container {
-    padding: 0 5.6rem 11.2rem;
-  }
-
-  .explore-card {
-    width: 96%;
-    height: 43.3rem;
-  }
-
-  .badge-img {
-    top: -18%;
-  }
-
-  .arrow {
-    font-size: 2.4rem;
-  }
-
-  .testimonial-section,
-  .why-us--section {
-    margin: 0 auto 8rem;
-  }
-
-  .explore-cards--section {
-    margin: 0 auto 4rem;
-  }
-
-  .explore-card--grid {
-    max-width: 94%;
-    height: 100%;
+  .container {
+    max-width: 144rem;
     margin: 0 auto;
-    padding: 1.2rem;
-    column-gap: 1.2rem;
-  }
-
-  .testimonial-cards {
-    padding: 2.4rem;
-  }
-
-  .about-icon--container {
-    column-gap: 10.7rem;
-  }
-
-  .icon-container {
-    column-gap: 10.7rem;
-  }
-
-  .why-us--container {
-    padding: 6rem 4.8rem 4.8rem;
-  }
-
-  .why-us {
-    padding: 6.8rem 0 0;
-  }
-
-  .about-img {
-    top: 0.8%;
-  }
-
-  .centered-text {
-    margin-top: 13rem;
-  }
-
-  .journey-container {
-    margin: 6.4rem auto 8rem;
-  }
-
-  .m-v--card {
-    width: 100%;
-    height: 100%;
-  }
-
-  .why-section {
-    margin: 8rem auto;
-  }
-
-  .cards-section {
-    margin: 0 auto 8rem;
-  }
-
-  .why-container {
-    padding: 6rem 4.8rem 4.8rem;
-  }
-
-  .about-why--card {
-    max-width: 45.6rem;
-    height: 43.4rem;
-  }
-
-  .tutor-section {
-    margin: 0 auto 12rem;
-  }
-
-  .padding-container {
-    padding: 0 0 8rem;
-  }
-
-  .card-background {
-    left: 4%;
-  }
-
-  .tutor-card--1 {
-    max-width: 32.6rem;
-    height: 48.9rem;
-  }
-
-  .card-text-container {
-    padding: 7rem 5.371rem 7rem 0;
-    column-gap: 9.482rem;
-  }
-
-  .fee-container {
-    gap: 4.4rem;
-  }
-
-  .tutor-tag--1,
-  .lesson-type--include--1 {
-    align-items: flex-start;
-    gap: 0.4rem;
-  }
-
-  .value-badge--img {
-    top: -15%;
-  }
-
-  .select-btn--3 {
-    margin-top: auto;
-  }
-
-  .card-content--1 {
-    padding: 2.4rem 1.6rem 2rem;
-    margin-bottom: 0;
-  }
-
-  .pricing-cards--section {
-    margin-bottom: 8rem;
-  }
-
-  .package-container {
-    gap: 8rem;
-  }
-
-  .pricing-text--container {
-    padding: 6rem 4.8rem 4.8rem;
-  }
-
-  .pricing-icon--container {
-    column-gap: 11.7rem;
-  }
-
-  .pricing-text--card {
-    padding: 6.4rem 0 0;
-  }
-
-  .contact-section {
-    margin-bottom: 8rem;
-  }
-
-  .contact-container {
-    padding: 4.8rem;
-  }
-
-  .contact-text--box {
-    padding: 0 0 4.8rem;
-  }
-
-  .card-subtext {
-    padding-bottom: 0;
   }
 }
 
@@ -253,8 +24,23 @@
     padding: 0 1.6rem;
   }
 
+  .explore-cards--section,
+  .why-us--section,
+  .cards-section,
+  .contact-section {
+    margin-bottom: 7.2rem;
+  }
+
+  .pricing-cards--section {
+    margin-bottom: 8rem;
+  }
+
+  .why-section {
+    margin: 7.2rem auto;
+  }
+
   .header-container {
-    padding: 0 0 0 3.2rem;
+    padding: 1.6rem 3.2rem;
   }
 
   .header-logo {
@@ -341,7 +127,9 @@
 
   .tutor-btn,
   .book-btn {
-    padding: 1.6rem 3.2rem;
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+    text-align: center;
     width: 100%;
   }
 
@@ -349,10 +137,6 @@
     grid-template-columns: 1.3fr 0.7fr;
     column-gap: 7.6rem;
     padding: 6.4rem 4.8rem;
-  }
-
-  .social-btn {
-    font-size: 1.2rem;
   }
 
   .arrow {
@@ -374,7 +158,7 @@
   }
 
   .course-section {
-    margin: 4.8rem auto 6.4rem;
+    margin: 4.8rem auto 8rem;
     padding: 0;
   }
 
@@ -383,12 +167,11 @@
   }
 
   .icon-grid--container {
-    grid-template-columns: 1.4fr 0.6fr;
-    padding: 0 4.8rem 8rem;
+    max-width: 100%;
   }
 
   .smile-icon--img {
-    width: 16.4rem;
+    max-width: 16.4rem;
     height: 16.4rem;
   }
 
@@ -409,12 +192,20 @@
     height: 43.4rem;
   }
 
-  .explore-btn {
-    font-size: 1.6rem;
+  .explore-btn,
+  .price-btn,
+  .about-explore--btn {
+    font-size: 1.4rem;
     margin-top: auto;
+    padding: 1.8rem 1.6rem;
+  }
+
+  .card-wrap {
+    padding: 2.4rem 1.6rem 3.2rem;
   }
 
   .card-heading {
+    font-size: 2.4rem;
     padding: 0 0 1.6rem;
   }
 
@@ -423,18 +214,100 @@
   }
 
   .levels {
-    padding: 0 0 2.4rem;
+    padding-bottom: 2.4rem;
   }
 
   .badge-img {
     width: 11.7rem;
     height: 12.16rem;
-    top: -13%;
+    top: -27%;
+  }
+
+  .course-section {
+    overflow: hidden;
+    position: relative;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    background-color: var(--color-artyclick-blue);
   }
 
   .course-container {
-    gap: 1.6rem;
+    display: flex;
+    width: max-content;
     border-radius: 0;
+    animation: move 22s linear infinite;
+  }
+
+  .course-section::before,
+  .course-section::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 8rem;
+    z-index: 2;
+    pointer-events: none;
+  }
+
+  .course-section::before {
+    left: 0;
+    background: linear-gradient(to right, var(--primary-color), transparent);
+  }
+
+  .course-section::after {
+    right: 0;
+    background: linear-gradient(to left, var(--primary-color), transparent);
+  }
+
+  .course-container:hover {
+    animation-play-state: paused;
+  }
+
+  .course-group,
+  .course-group-2 {
+    display: flex;
+    align-items: center;
+  }
+
+  .course-group {
+    padding-right: 3.2rem;
+  }
+
+  .course-name {
+    display: inline-flex;
+    align-items: center;
+    padding: 0 3.2rem;
+    transition: color 0.2s ease;
+    position: relative;
+  }
+
+  .course-name:hover {
+    color: var(--color-white);
+  }
+
+  .course-name::after {
+    content: "·";
+    position: absolute;
+    right: -2px;
+    color: var(--color-white);
+    font-size: 2rem;
+  }
+
+  @keyframes move {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+
+  .student-level {
+    font-size: 1.2rem;
+  }
+
+  .journey-container {
+    margin: 9.6rem auto 8rem;
   }
 
   .m-v--section {
@@ -443,7 +316,7 @@
 
   .m-v--card {
     width: 100%;
-    padding: 2rem;
+    padding: 4rem 4rem 5.2rem;
     display: block;
   }
 
@@ -475,30 +348,30 @@
   }
 
   .why-us--container {
-    padding: 4rem 3.2rem 2.4rem;
+    padding: 4.8rem;
   }
 
   .why-container {
-    padding: 4.8rem 2.8rem;
+    padding: 4.8rem 4rem;
   }
 
   .about-icon--container {
-    gap: 10rem;
+    row-gap: 10rem;
   }
 
   .why-us-mini--container {
     gap: 2rem;
+    padding-top: 6.4rem;
   }
 
   .about-explore--btn,
   .price-btn {
-    font-size: clamp(1.6rem, 2vw, 2rem);
     margin-top: auto;
   }
 
   .why-us--heading,
   .why-us--subtext {
-    font-size: 2.4rem;
+    font-size: 3.2rem;
   }
 
   .why-us--img {
@@ -506,8 +379,12 @@
     height: 16.4rem;
   }
 
+  .icons {
+    font-size: 4rem;
+  }
+
   .why-us {
-    padding: 6.25rem 0 0;
+    padding-top: 4.8rem;
   }
 
   .why-card--text {
@@ -527,23 +404,25 @@
   }
 
   .m-v--container {
-    padding: 1.2rem;
-    column-gap: 1.2rem;
+    padding: 1.6rem;
+    column-gap: 1.6rem;
   }
 
   .plan-text--box {
-    padding: 4rem;
+    padding: 3.2rem;
+    margin-bottom: 2.4rem;
   }
 
   .pricing-container {
-    column-gap: 0.8rem;
-    padding: 0.8rem;
+    column-gap: 1.2rem;
+    padding: 1.2rem;
   }
 
   .select-btn--1,
   .select-btn--2,
-  .select-btn--3 {
-    padding: clamp(2rem, 2vw, 2.8rem);
+  .select-btn--3,
+  .recommended-btn {
+    padding: 2.8rem;
     margin-top: auto;
   }
 
@@ -553,39 +432,80 @@
 
   .value-badge--img {
     right: 0;
-    top: -17.8%;
+    top: -13%;
+    max-width: 9.6rem;
+    height: auto;
   }
 
   .card-text-container {
-    padding: 4rem 2rem 4rem 0;
-    column-gap: 7.2rem;
-    height: 52rem;
+    padding: 4rem 3.2rem;
+    column-gap: 9.4rem;
   }
 
   .card-background {
-    width: 43%;
-    left: 3%;
     padding: 1.2rem;
   }
 
   .card-content {
-    padding: 4rem 2.4rem 2.4rem;
+    padding: 2.4rem 1.6rem 4rem;
   }
 
   .card-contents {
-    padding: 4rem 0.3rem 2.4rem;
+    padding: 2.4rem 1.6rem 4rem;
   }
 
   .tutor-img {
-    margin-bottom: 2rem;
+    margin-bottom: 3.2rem;
   }
 
   .pricing-text--container {
-    padding: 4rem 2rem;
+    padding: 3.2rem;
   }
 
   .pricing-text--card {
     gap: 2rem;
+  }
+
+  .padding-container {
+    padding-bottom: 8rem;
+  }
+
+  .tutor-container {
+    row-gap: 9.6rem;
+  }
+
+  .tutor-card {
+    padding: 0 0.8rem 0.8rem;
+  }
+
+  .tutor-name {
+    padding-bottom: 2rem;
+  }
+
+  .tutor-section {
+    margin-bottom: 12rem;
+  }
+
+  .package-container {
+    gap: 6.4rem;
+  }
+
+  .plan-price {
+    font-size: 3.2rem;
+  }
+
+  .lesson-type--include,
+  .lesson-type--include--1 {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .pricing-icon--container {
+    column-gap: 11.7rem;
+  }
+
+  .contact-container {
+    padding: 4.8rem;
   }
 }
 
@@ -595,15 +515,11 @@
     right: 6%;
   }
 
-  .hero-section,
-  .explore-cards--section,
-  .testimonial-section,
-  .why-us--section {
-    max-width: 63.9rem;
-  }
-
   .hero-container {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+    padding: 3.2rem;
+    row-gap: 3.2rem;
+    column-gap: 3.2rem;
   }
 
   .course-section {
@@ -617,19 +533,28 @@
   }
 
   .hero-img--container,
-  .smiley-container {
-    grid-column: 1/-1;
+  .smiley-container,
+  .why-us--icon {
+    grid-column: 1/2;
     grid-row: 1/2;
+    justify-self: center;
+  }
+
+  .social-btn {
+    padding: 0.8rem 1.6rem;
   }
 
   .icon-grid--container {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
     row-gap: 3.2rem;
+    column-gap: 4.8rem;
+    padding-bottom: 8rem;
   }
 
   .badge-img {
-    top: -11%;
-    width: 8rem;
+    top: -16%;
+    left: -3%;
+    max-width: 8rem;
     height: auto;
   }
 
@@ -637,32 +562,14 @@
     padding: 0 0.4rem;
   }
 
-  /* .explore-card--grid {
-    grid-template-columns: 1fr 1fr;
-    height: 100%;
-    column-gap: 0.8rem;
-    padding: 0.8rem;
-  } */
-
   .explore-card--grid {
-    grid-template-columns: 1fr;
-    row-gap: 0.8rem;
-    padding: 0.8rem;
-    grid-template-areas:
-      "second"
-      "first";
+    grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+    row-gap: 1.2rem;
   }
 
-  .explore-card--1:nth-child(1) {
-    grid-area: first;
-  }
-  .explore-card--2:nth-child(2) {
-    grid-area: second;
-  }
-
-  .explore-card--1,
   .explore-card--2 {
-    padding: 0 0.8rem 0.8rem;
+    grid-row: 1 / 2;
+    grid-column: 1 /2;
   }
 
   .card-wrap {
@@ -693,12 +600,13 @@
   }
 
   .arrow {
-    font-size: 2.4rem;
+    font-size: 2rem;
   }
 
   .testimonial-container {
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+    row-gap: 1.6rem;
+    column-gap: 1.6rem;
   }
 
   .why-us--container {
@@ -706,7 +614,14 @@
   }
 
   .icon-container {
+    grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
     column-gap: 2.4rem;
+    row-gap: 4rem;
+  }
+
+  .why-us--heading,
+  .why-us--subtext {
+    font-size: 2.4rem;
   }
 
   .why-us {
@@ -735,10 +650,22 @@
     margin-left: 0;
   }
 
+  .about-primary--text {
+    font-size: 2.4rem;
+  }
+
   .line-1--img,
   .line-2--img,
   .line-3--img {
     display: none;
+  }
+
+  .about-img {
+    height: 20rem;
+  }
+
+  .journey-container {
+    margin-top: 7.2rem;
   }
 
   .m-v--section {
@@ -747,11 +674,9 @@
   }
 
   .m-v--container {
-    grid-template-columns: 1fr;
-    height: 100%;
-    width: 100%;
-    padding: 0.8rem;
-    row-gap: 0.8rem;
+    grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+    padding: 1.6rem;
+    row-gap: 1.6rem;
   }
 
   .m-v--card {
@@ -773,35 +698,24 @@
   }
 
   .about-icon--container {
-    column-gap: 1.6rem;
+    grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+    column-gap: 4rem;
+    row-gap: 4rem;
   }
 
   br {
     display: none;
   }
 
-  .cards-section,
-  .m-v--section,
-  .about-section,
-  .why-section {
-    max-width: 63.9rem;
-    margin: 8rem auto;
-  }
-
   .about-card--grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
     padding: 0.8rem;
     row-gap: 0.8rem;
     height: auto;
   }
 
-  .tutor-section {
-    max-width: 63.9rem;
-    margin: 0 auto 6.4rem;
-  }
-
   .tutor-container {
-    row-gap: 4.8rem;
+    row-gap: 6.4rem;
   }
 
   .tutor-section .dotted-border {
@@ -816,10 +730,10 @@
   }
 
   .card-text-container {
-    grid-template-columns: 1fr;
-    column-gap: 0;
-    row-gap: 2.4rem;
-    padding: 3.2rem 0 0;
+    grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+    column-gap: 3.2rem;
+    row-gap: 5.4rem;
+    padding: 4.4rem 0 0;
     margin-bottom: 0;
   }
 
@@ -831,41 +745,74 @@
     padding: 0.8rem;
   }
 
+  .card-content {
+    padding: 2.4rem 1.6rem;
+  }
+
+  .tutor-img {
+    margin-bottom: 2rem;
+  }
+
+  .tutor-name {
+    font-size: 2.4rem;
+    padding-bottom: 1.6rem;
+  }
+
+  .lesson-number {
+    padding: 1.2rem 0 2.4rem;
+  }
+
+  .fee-text {
+    font-size: 1.4rem;
+  }
+
+  .lesson-fee {
+    font-size: 1.6rem;
+  }
+
   .tutor-section .dotted-border:last-child {
     border-bottom: none;
   }
 
-  .text-container {
-    grid-row: 2/3;
-    grid-column: span 2;
+  .tutor-section {
+    margin-bottom: 8rem;
   }
 
   .pricing-container {
     grid-template-columns: 1fr;
-    row-gap: 0.8rem;
-    grid-template-areas:
-      "third"
-      "second"
-      "first";
+    row-gap: 1.6rem;
+    padding: 1.6rem;
+    width: 80%;
+    margin: 0 auto;
   }
 
-  .pricing-card:nth-child(1) {
-    grid-area: first;
-  }
   .pricing-card:nth-child(2) {
-    grid-area: second;
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
   }
+
   .pricing-card:nth-child(3) {
-    grid-area: third;
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
   }
 
   .tutor-icon--container {
     column-gap: 2.6rem;
   }
 
+  .tutor-meet--text {
+    font-size: 2.8rem;
+  }
+
   .footer-nav--container {
-    gap: 1.2rem;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    column-gap: 3.2rem;
+    row-gap: 3.2rem;
     justify-items: center;
+  }
+
+  .copyright {
+    grid-column: span 2;
   }
 
   .plan-text--box {
@@ -874,7 +821,19 @@
 
   .lesson-type--include,
   .lesson-type--include--1 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+    justify-items: baseline;
+    align-items: center;
     padding: 0 0 1.2rem;
+    row-gap: 1rem;
+    column-gap: 1.6rem;
+    max-width: 80%;
+  }
+
+  .blue-tag,
+  .tag {
+    padding: 0.8rem 1.6rem;
   }
 
   .plan-price {
@@ -900,12 +859,13 @@
   }
 
   .pricing-icon--container {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+    column-gap: 4.4rem;
     row-gap: 2.4rem;
   }
 
   .pricing-img--icon {
-    grid-column: 1/-1;
+    grid-column: 1/2;
     grid-row: 1/2;
     justify-self: center;
   }
@@ -926,16 +886,6 @@
     font-size: 3rem;
   }
 
-  .pricing-cards--section {
-    margin-bottom: 6.4rem;
-    max-width: 63.9rem;
-  }
-
-  .contact-section {
-    margin: 0 auto 6.4rem;
-    max-width: 63.9rem;
-  }
-
   .contact-container {
     padding: 2rem;
   }
@@ -945,7 +895,7 @@
   }
 
   .form-input {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
     gap: 2.4rem;
   }
 }
@@ -1008,9 +958,28 @@
     padding: 0;
   }
 
+  .course-container {
+    gap: 0;
+  }
+
+  .course-group {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .course-name {
+    padding: 0 1.6rem;
+  }
+
   .explore-section {
     padding: 0 1.6rem;
     margin: 0 0 5.6rem;
+  }
+
+  .badge-img {
+    max-width: 10rem;
+    top: -23%;
+    left: -3%;
   }
 
   .explore-primary--text {
@@ -1022,14 +991,9 @@
     padding-bottom: 2rem;
   }
 
-  .badge-img {
-    top: -5%;
-    height: auto;
-  }
-
   .card-wrap,
   .cards-section .card-wrap {
-    padding: 4rem 2rem 2rem;
+    padding: 4rem 1.2rem 2rem;
   }
 
   .card-heading {
@@ -1127,6 +1091,11 @@
     font-size: 3rem;
   }
 
+  .about-card--grid {
+    padding: 1.6rem;
+    row-gap: 1.6rem;
+  }
+
   .m-v--section {
     height: 100%;
   }
@@ -1166,6 +1135,10 @@
     row-gap: 4rem;
   }
 
+  .tutor-meet {
+    text-align: center;
+  }
+
   .tutor-img--icon {
     grid-row: 1/2;
     justify-self: center;
@@ -1173,12 +1146,20 @@
 
   .tutor-container {
     margin: 0 auto 5.6rem;
+    row-gap: 7.2rem;
+  }
+
+  .tutor-container .start-btn {
+    font-size: 1.6rem;
+  }
+
+  .card-text-container {
+    padding: 3.6rem 0 0;
   }
 
   .card-background {
-    min-width: 100%;
-    grid-column: span 2;
     position: static;
+    padding: 1.6rem;
   }
 
   .name,
@@ -1211,7 +1192,7 @@
   }
 
   .card-contents {
-    padding: 4rem 2.8rem 2.4rem;
+    padding: 4rem 1.6rem 2.4rem;
   }
 
   .tutor-card,
@@ -1221,7 +1202,24 @@
   }
 
   .card-content {
-    padding: 4rem 2.8rem 2.4rem;
+    padding: 4rem 1.2rem 2.4rem;
+  }
+
+  .choose-plan--text,
+  .choose-plan--subtext,
+  .text-box--heading,
+  .text-box--subtext {
+    font-size: 2.4rem;
+  }
+
+  .pricing-container {
+    width: 100%;
+  }
+
+  .pricing-container .recommended-btn,
+  .pricing-container .select-btn--2,
+  .pricing-container .select-btn--1 {
+    font-size: 1.6rem;
   }
 
   .tutor-img {
@@ -1252,9 +1250,19 @@
   .select-btn--1,
   .select-btn--2,
   .select-btn--3,
-  .about-explore--btn {
+  .about-explore--btn,
+  .recommended-btn {
     padding: 2rem 1.6rem;
     font-size: 1.4rem;
+  }
+
+  .about-explore--btn,
+  .price-btn {
+    font-size: clamp(
+      1.2rem,
+      calc(12px + (16 - 12) * ((100vw - 320px) / (375 - 320))),
+      1.6rem
+    );
   }
 
   .tutor-tag--1,
